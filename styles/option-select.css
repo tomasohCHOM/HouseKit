@@ -6,6 +6,7 @@
     margin-left: 20px;
     margin-bottom: 40px;
 }
+
 .option-select-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -50,7 +51,8 @@
 }
 
 .outdoor-option-image,
-.bedding-option-image {
+.bedding-option-image,
+.kitchen-option-image {
     height: 100%;
 }
 
