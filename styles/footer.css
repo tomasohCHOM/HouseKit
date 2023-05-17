@@ -34,7 +34,7 @@
 
 .footer-left > button, .footer-middle > button, .footer-right > button {
     margin: 6px 0;
-    width: 150px;
+    width: 120px;
     padding: 5px 12px;
     background-color: rgb(10, 10, 178);
     color: white;
@@ -48,4 +48,16 @@
 
 .footer-left > button:hover, .footer-middle > button:hover, .footer-right > button:hover {
     opacity: 0.7;
+}
+
+.contact-us-image-wrapper {
+    margin: 6px 0;
+    display: flex;
+    flex-direction: row;
+}
+.contact-us-logo-images {
+    margin: 0 5px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
 }
