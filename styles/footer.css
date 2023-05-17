@@ -60,7 +60,8 @@
     width: 25px;
     height: 25px;
     cursor: pointer;
-    
+    filter: brightness(0) saturate(100%)
+            brightness(0) invert(23%) sepia(98%) saturate(17%) hue-rotate(346deg) brightness(98%) contrast(86%);
 }
 
 .copyright-issue {
