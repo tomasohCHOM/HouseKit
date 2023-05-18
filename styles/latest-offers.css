@@ -50,3 +50,33 @@
     position: relative;
     z-index: 1;
 }
+
+@media (max-width: 1308px) {
+    .latest-offers-box { font-size: 17px; }
+}
+
+@media (max-width: 1215px) {
+    .latest-offers-wrapper { grid-template-columns: 1fr 1fr 1fr 1fr; }
+    .latest-offers-box { font-size: 20px; }
+}
+
+@media (min-width: 968.1px) and (max-width: 1058px) {
+    .latest-offers-box { font-size: 17px; }
+}
+
+@media (max-width: 968px) {
+    .latest-offers-wrapper { grid-template-columns: 1fr 1fr 1fr; }
+    .latest-offers-box { font-size: 20px; }
+}
+
+@media (min-width: 792.1px) and (max-width: 803.2px) {
+    .latest-offers-box { font-size: 19px; }
+}
+@media (max-width: 792px) {
+    .latest-offers-wrapper { grid-template-columns: 1fr 1fr; }
+    .latest-offers-box { font-size: 20px; }
+}
+
+@media (max-width: 518.4px) {
+    .latest-offers-box { font-size: 17px; }
+}
