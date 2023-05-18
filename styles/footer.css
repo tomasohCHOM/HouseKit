@@ -70,3 +70,9 @@
     color: rgb(77, 77, 77);
     margin: 20px 0px 10px 10px;
 }
+
+@media (max-width: 692px) {
+    .footer-left > .title, .footer-middle > .title, .footer-right > .title { font-size: 23px; }
+    .footer-left > p, .footer-middle > p, .footer-right > p { font-size: 15px; }
+    .copyright-issue { font-size: 12px; }
+}
