@@ -52,7 +52,8 @@
 
 .outdoor-option-image,
 .bedding-option-image,
-.kitchen-option-image {
+.kitchen-option-image,
+.rugs-mattresses-option-image {
     height: 100%;
 }
 
@@ -73,4 +74,17 @@
 .search-by-room-option-text {
     position: relative;
     z-index: 1;
+}
+
+@media (max-width: 1043px) {
+    .option-select-grid { grid-template-columns: 1fr 1fr 1fr; }
+}
+
+@media (max-width: 774px) {
+    .option-select-grid { grid-template-columns: 1fr 1fr; } 
+}
+
+@media (max-width: 534px) {
+    .option-select-box { font-size: 22px; }
+    .furniture-option-image { height: 100%; }
 }
