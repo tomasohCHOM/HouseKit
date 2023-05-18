@@ -61,7 +61,12 @@
     height: 25px;
     cursor: pointer;
     filter: brightness(0) saturate(100%)
-            brightness(0) invert(23%) sepia(98%) saturate(17%) hue-rotate(346deg) brightness(98%) contrast(86%);
+            invert(54%) sepia(9%) saturate(19%) hue-rotate(346deg) brightness(86%) contrast(91%);
+    transition: all 0.15s;
+}
+
+.contact-us-logo-images:hover {
+    filter: brightness(0) invert(23%) sepia(98%) saturate(17%) hue-rotate(346deg) brightness(98%) contrast(86%);
 }
 
 .copyright-issue {
