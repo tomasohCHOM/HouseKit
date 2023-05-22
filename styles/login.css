@@ -1,32 +1,30 @@
+:root {
+    --font: 'DM Sans', sans-serif;
+    --color-white: rgb(247, 247, 247);
+    --color-white-opaque: rgba(247, 247, 247, 0.6);
+    --color-black: rgba(77, 77, 77);
+    --color-blue: rgb(10, 10, 178);
+}
+
 *, *::before, *::after {
     box-sizing: border-box;
     font-family: var(--font);
 }
 
-:root {
-    --font: 'DM Sans', sans-serif;
-    --color-white: rgb(247, 247, 247);
-    --color-white-opaque: rgba(247, 247, 247, 0.5);
-    --color-black-opaque: rgba(0, 0, 0, 0.5);
-    --color-orange: rgb(246, 164, 11);
-    --color-blue: rgb(10, 10, 178);
-}
-
 body {
     margin: 0;
     padding: 0;
+    background-image: url('../images/login-images/login-background-image.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .login-main {
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center;
     width: 100%;
     min-height: 85vh;
-    background-image: url('images/login-images/login-background-image.webp');
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .login-wrapper {
@@ -34,16 +32,18 @@ body {
     height: 450px;
     padding: 1.25rem;
     border-radius: 1.25rem;
-    background: var(--color-black-opaque);
+    background: var(--color-white-opaque);
     border: 2px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 2px 2px 5px rgba(10, 15, 27, 0.15);
     backdrop-filter: blur(3px);
     -webkit-backdrop-filter: blur(3px);
+
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     row-gap: 10px;
-    color: var(--color-white);
+    color: var(--color-black);
 }
 
 .login-wrapper > h2 {
@@ -71,7 +71,7 @@ body {
     border-radius: 40px;
     font-size: 1rem;
     background-color: var(--color-white);
-    color: black;
+    color: var(--color-black);
     border: none;
     cursor: pointer;
     transition: all 0.15s;
@@ -84,7 +84,7 @@ body {
 }
 
 .login-wrapper > a {
-    color: var(--color-white);
+    color: var(--color-black);
 }
 
 .unregistered {
@@ -92,21 +92,4 @@ body {
     text-align: center;
     grid-template-columns: 1fr 1fr;
     column-gap: 5px;
-}
-
-.unregistered > a {
-    text-decoration: none;
-    font-size: 1rem;
-    font-weight: 600;
-    background: transparent;
-    color: var(--color-white);
-    border: 2px solid rgba(255, 255, 255, 0.5);
-    border-radius: 12px;
-    cursor: pointer;
-    transition: all 0.15s;
-}
-
-.unregistered > a:hover {
-    background-color: var(--color-blue);
-    color: var(--color-white);
 }
