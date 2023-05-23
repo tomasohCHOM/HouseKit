@@ -90,31 +90,17 @@
 }
 
 @media (min-width: 615.21px) and (max-width: 929.6px) {
-    .header {
-        height: 100px;
-    }
+    .header { height: 100px; }
     .header-buttons { font-size: 14px; }
     .sign-in-button { font-size: 14px; }
-    .hamburger-menu-icon { height: 20px; }
-    .housekit-logo { height: 32px; }
 }
 
 @media (min-width: 570.41px) and (max-width: 615.2px) {
-    .header {
-        height: 100px;
-    }
-    .header-buttons { font-size: 12px; }
-    .sign-in-button { font-size: 12px; }
-    .hamburger-menu-icon { height: 20px; }
-    .housekit-logo { height: 32px; }
+    .header { height: 60px; }
+    .header-buttons { display: none; }
 }
 
 @media (max-width: 570.4px) {
-    .header {
-        height: 140px;
-    }
-    .header-buttons { font-size: 10px; }
-    .sign-in-button { font-size: 10px; }
-    .hamburger-menu-icon { height: 20px; }
-    .housekit-logo { height: 32px; }
+    .header { height: 60px; }
+    .header-buttons { display: none; }
 }
