@@ -80,3 +80,8 @@
 @media (max-width: 518.4px) {
     .latest-offers-box { font-size: 17px; }
 }
+
+@media (max-width: 430px) {
+    .latest-offers-wrapper { grid-template-columns: 1fr; }
+    .latest-offers-box { font-size: 17px; }
+}

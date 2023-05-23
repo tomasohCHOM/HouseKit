@@ -88,3 +88,11 @@
     .option-select-box { font-size: 22px; }
     .furniture-option-image { height: 100%; }
 }
+
+@media (max-width: 430px) {
+    .option-select-box {
+        font-size: 22px;
+        height: 100px;
+        line-height: 100px;
+    }
+}
