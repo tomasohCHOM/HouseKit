@@ -87,6 +87,7 @@
 @media (max-width: 534px) {
     .option-select-box { font-size: 22px; }
     .furniture-option-image { height: 100%; }
+    .bath-option-image { height: 100%; }
 }
 
 @media (max-width: 430px) {
