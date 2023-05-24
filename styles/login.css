@@ -61,6 +61,7 @@ body {
     font-size: 1rem;
     padding: 0 1rem;
     border: none;
+    outline: none;
     border-radius: 1.25rem;
     transition: all 0.25s;
 }
