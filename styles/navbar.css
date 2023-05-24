@@ -1,4 +1,15 @@
-.navbar {
+.closed-navbar {
+    display: none;
+    position: fixed;
+    left: 0;
+    width: 300px;
+    height: 100%;
+    background-color: rgb(247, 247, 247);
+    z-index: 125;
+    padding: 1rem;
+}
+
+.open-navbar {
     position: fixed;
     left: 0;
     width: 300px;
@@ -35,7 +46,7 @@
     cursor: pointer;
 }
 
-.navbar > ul > li {
+.open-navbar > ul > li {
     font-family: 'DM Sans', sans-serif;
     font-size: 1.25rem;
     list-style: none;
@@ -45,7 +56,7 @@
     transition: all 0.1s;
 }
 
-.navbar > ul > li > a:hover {
+.open-navbar > ul > li > a:hover {
     color: rgb(10, 10, 178);
 }
 
