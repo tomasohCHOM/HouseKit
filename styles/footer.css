@@ -81,3 +81,13 @@
     .footer-left > p, .footer-middle > p, .footer-right > p { font-size: 15px; }
     .copyright-issue { font-size: 12px; }
 }
+
+@media (max-width: 470px) {
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .footer-right {
+        grid-column: 1 / -1;
+    }
+}
