@@ -74,7 +74,7 @@
     margin-top: 1rem;
 }
 
-.navbar > ul > li > a {
+.open-navbar > ul > li > a {
     text-decoration: none;
     color: rgb(77, 77, 77);
 }
