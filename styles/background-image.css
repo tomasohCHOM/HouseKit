@@ -2,7 +2,7 @@
     position: relative;
     width: 100vw;
     max-width: 100%;
-    height: 63vh;
+    height: 450px;
     overflow: hidden;
     margin-bottom: 40px;
 }
@@ -32,6 +32,7 @@
 }
 
 .catchphrase {
+    width: 100%;
     margin-top: 100px;
     margin-bottom: 5px;
     padding-left: 10px;
@@ -55,30 +56,6 @@
     z-index: 75;
 }
 
-@media (max-width: 1135px) {
-    /* .catchphrase {
-        font-size: 36px;
-    }
-    .sub-catchphrase {
-        font-size: 14px;
-    } */
-}
-
-@media (min-width: 922.4px) and (max-width: 1134.9px) {
-    /* .catchphrase {
-        font-size: 30px;
-    }
-    .sub-catchphrase {
-        font-size: 12px;
-    } */
-}
-
-@media (min-width: 695.9px) and (max-width: 922.39px) {
-    /* .catchphrase-box-wrapper { width: 300px; } */
-    /* .catchphrase { font-size: 26px; }
-    .sub-catchphrase { font-size: 10px; } */
-}
-
 @media (max-width: 696px) {
     .living-room-background-image { width: 100vw; }
     .catchphrase-box-wrapper {
@@ -90,12 +67,31 @@
 }
 
 @media (max-width: 430px) {
+    .main-section-wrapper {
+        height: 320px;
+        overflow-wrap: break-word;
+    }
     .catchphrase {
         font-size: 30px;
-        padding: 1rem;
+        overflow-wrap: break-word;
+    }
+    .sub-catchphrase {
+        font-size: 14px;
+        overflow-wrap: break-word;
+    }
+}
+
+@media (max-width: 360px) {
+    .catchphrase-box-wrapper {
+        width: 320px;
+        overflow-wrap: break-word;
+    }
+    .catchphrase {
+        font-size: 26px;
+        overflow-wrap: break-word;
     }
     .sub-catchphrase {
         font-size: 12px;
-        padding: 1rem;
+        overflow-wrap: break-word;
     }
 }
