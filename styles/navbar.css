@@ -1,15 +1,15 @@
-.closed-navbar {
-    display: none;
+.navbar {
     position: fixed;
-    left: 0;
+    left: -332px;
     width: 300px;
     height: 100%;
     background-color: rgb(247, 247, 247);
     z-index: 125;
     padding: 1rem;
+    transition: left 0.2s ease-in-out;
 }
 
-.open-navbar {
+.navbar.open-navbar {
     position: fixed;
     left: 0;
     width: 300px;
@@ -46,9 +46,9 @@
     cursor: pointer;
 }
 
-.open-navbar > ul > li {
+.navbar > ul > li {
     font-family: 'DM Sans', sans-serif;
-    font-size: 1.25rem;
+    font-size: 1.125rem;
     list-style: none;
     height: 40px;
     border-bottom: 1px solid rgba(77, 77, 77, 0.4);
@@ -56,7 +56,7 @@
     transition: all 0.1s;
 }
 
-.open-navbar > ul > li > a:hover {
+.navbar > ul > li > a:hover {
     color: rgb(10, 10, 178);
 }
 
@@ -74,7 +74,7 @@
     margin-top: 1rem;
 }
 
-.open-navbar > ul > li > a {
+.navbar > ul > li > a {
     text-decoration: none;
     color: rgb(77, 77, 77);
 }
