@@ -7,7 +7,6 @@
 }
 
 *, *::before, *::after {
-    box-sizing: border-box;
     font-family: var(--font);
 }
 
@@ -26,6 +25,17 @@ body {
     width: 100%;
     min-height: 100vh;
 }
+
+/* Very ugly way of fixing box sizing */
+.login-wrapper,
+.login-wrapper > h2,
+.login-wrapper > div,
+.login-form > input,
+.login-wrapper > button,
+.login-wrapper > a {
+    box-sizing: border-box;
+}
+
 
 .login-wrapper {
     width: 400px;
@@ -86,11 +96,4 @@ body {
 
 .login-wrapper > a {
     color: var(--color-black);
-}
-
-.unregistered {
-    display: grid;
-    text-align: center;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 5px;
 }
