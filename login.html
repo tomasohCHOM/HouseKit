@@ -5,16 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/login.css">
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/navbar.css">
     <title>Login | HouseKit</title>
 </head>
 <body>
+    <nav id="navbar" class="navbar">
+        <header class="navbar-header">
+            <button id="close-navbar-menu" class="close-navbar-button"><ion-icon name="close-outline"></ion-icon></button>
+            <img onclick="window.location.href='index.html'" class="housekit-logo-navbar" src="images/header-images/housekit-logo.png">
+        </header>
+        <ul>
+            <li><a href=#><ion-icon class="navbar-icons" name="person-circle-outline"></ion-icon>My Account</a></li>
+            <li><a href=#><ion-icon class="navbar-icons" name="cart-outline"></ion-icon>My Cart</a></li>
+            <li><a href=#><ion-icon class="navbar-icons" name="home-outline"></ion-icon>Furnitures</a></li>
+            <li><a href=#><ion-icon class="navbar-icons" name="pricetags-outline"></ion-icon>Latest Offers</a></li>
+            <li><a href=#><ion-icon class="navbar-icons" name="information-circle-outline"></ion-icon>About Us</a></li>
+            <li><a href=#><ion-icon class="navbar-icons" name="people-outline"></ion-icon>Customer Service</a></li>
+            <li><a href=#><ion-icon class="navbar-icons" name="call-outline"></ion-icon>Contact Us</a></li>
+            <button onclick="window.location.href='login.html'" class="sign-in-button navbar-sign-in">Sign In</button>
+        </ul>
+    </nav>
     <header class="header">
         <div class="left-section">
-            <img onclick="window.location.href='index.html'" class="housekit-logo" src="images/header-images/housekit-logo.png"
-                 style="margin-left: 15px;"
-            >
+            <img id="open-navbar-menu" class="hamburger-menu-icon" src="images/header-images/hamburger-menu-icon.png">
+            <img onclick="window.location.href='index.html'" class="housekit-logo" src="images/header-images/housekit-logo.png">
+        </div>
         </div>
         <div class="right-section">
             <button class="header-buttons">Furniture</button>
@@ -33,14 +51,14 @@
             <h2 class="login-title">Login to HouseKit</h2>
             <div class="login-form">
                 <ion-icon name="person-outline"></ion-icon>
-                <input type="text" placeholder="Username" required>
+                <input id="login-username" type="text" placeholder="Username">
             </div>
             <div class="login-form">
                 <ion-icon name="lock-closed-outline"></ion-icon>
-                <input type="password" placeholder="Password" required>
+                <input id="login-password" type="password" placeholder="Password">
             </div>
             <a href="#" class="login-help">Forgot your Password?</a>
-            <button type="submit">Login</button>
+            <button id="login-submit" type="submit">Login</button>
             <a href="#" class="2fa-info">
                 Don't Have an Account? Register Here
             </a>
@@ -48,5 +66,6 @@
     </main>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
