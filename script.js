@@ -20,16 +20,19 @@ const loginWrapper = document.getElementById('login-wrapper');
 const usernameInput = document.getElementById('login-username');
 const passwordInput = document.getElementById('login-password');
 const loginSubmit = document.getElementById('login-submit');
+const loginErrorMessage = document.getElementById('login-error-message');
 
 loginSubmit.addEventListener('click', (e) => {
     e.preventDefault();
     let errorMessage = "";
     if (usernameInput.value == "" || usernameInput.value == null) {
         errorMessage = "Please input a correct username.";
-        const errorElement = document.body.createElement('p');
-        errorElement.innerHTML = errorMessage;
-        loginWrapper.appendChild(errorElement);
     } else if (passwordInput.value == "" || passwordInput.value == null) {
         errorMessage = "Please input a correct password.";
+    } else {
+        if (passwordInput.value.length < 6 || passwordInput.value.length > 20) {
+            errorMessage = "Password must be between 6 and 20 characters.";
+        }
     }
+    loginErrorMessage.textContent = errorMessage;
 });

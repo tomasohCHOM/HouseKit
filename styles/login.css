@@ -32,7 +32,8 @@ body {
 .login-wrapper > div,
 .login-form > input,
 .login-wrapper > button,
-.login-wrapper > a {
+.login-wrapper > a,
+.error-message {
     box-sizing: border-box;
 }
 
@@ -96,4 +97,9 @@ body {
 
 .login-wrapper > a {
     color: var(--color-black);
+}
+
+.error-message {
+    color: rgb(192, 0, 0);
+    text-align: center;
 }
