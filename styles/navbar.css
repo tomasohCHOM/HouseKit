@@ -1,80 +1,80 @@
 .navbar {
-    position: fixed;
-    left: -332px;
-    width: 300px;
-    height: 100%;
-    background-color: rgb(247, 247, 247);
-    z-index: 125;
-    padding: 1rem;
-    transition: left 0.2s ease-in-out;
+	position: fixed;
+	left: -332px;
+	width: 300px;
+	height: 100%;
+	background-color: rgb(247, 247, 247);
+	z-index: 125;
+	padding: 1rem;
+	transition: left 0.2s ease-in-out;
 }
 
 .navbar.open-navbar {
-    position: fixed;
-    left: 0;
-    width: 300px;
-    height: 100%;
-    background-color: rgb(247, 247, 247);
-    z-index: 125;
-    padding: 1rem;
+	position: fixed;
+	left: 0;
+	width: 300px;
+	height: 100%;
+	background-color: rgb(247, 247, 247);
+	z-index: 125;
+	padding: 1rem;
 }
 
 .navbar-header {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
 }
 
 .close-navbar-button {
-    width: 40px;
-    height: 40px;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    background-color: transparent;
-    transition: all 0.15s;
+	width: 40px;
+	height: 40px;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	background-color: transparent;
+	transition: all 0.15s;
 }
 
 .close-navbar-button:hover {
-    background-color:rgb(220, 220, 220);
+	background-color: rgb(220, 220, 220);
 }
 
 .housekit-logo-navbar {
-    height: 40px;
-    mix-blend-mode: multiply;
-    cursor: pointer;
+	height: 40px;
+	mix-blend-mode: multiply;
+	cursor: pointer;
 }
 
 .navbar > ul > li {
-    font-family: 'DM Sans', sans-serif;
-    font-size: 1.125rem;
-    list-style: none;
-    height: 40px;
-    border-bottom: 1px solid rgba(77, 77, 77, 0.4);
-    padding: 0.75rem;
-    transition: all 0.1s;
+	font-family: "DM Sans", sans-serif;
+	font-size: 1.125rem;
+	list-style: none;
+	height: 40px;
+	border-bottom: 1px solid rgba(77, 77, 77, 0.4);
+	padding: 0.75rem;
+	transition: all 0.1s;
 }
 
 .navbar > ul > li > a:hover {
-    color: rgb(10, 10, 178);
+	color: rgb(10, 10, 178);
 }
 
 .navbar-icons {
-    margin-right: 10px;
+	margin-right: 10px;
 }
 
 .navbar-sign-in {
-    width: 100%;
-    font-size: 1.25rem;
-    height: auto;
-    border-radius: 1.5rem;
-    padding: 0.6rem;
-    margin: 0;
-    margin-top: 1rem;
+	width: 100%;
+	font-size: 1.25rem;
+	height: auto;
+	border-radius: 1.5rem;
+	padding: 0.6rem;
+	margin: 0;
+	margin-top: 1rem;
 }
 
 .navbar > ul > li > a {
-    text-decoration: none;
-    color: rgb(77, 77, 77);
+	text-decoration: none;
+	color: rgb(77, 77, 77);
 }

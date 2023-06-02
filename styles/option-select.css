@@ -1,39 +1,39 @@
 .option-select-title {
-    font-family: 'DM Sans', sans-serif;
-    font-weight: bold;
-    font-size: 40px;
-    color: rgb(77, 77, 77);
-    margin-left: 20px;
-    margin-bottom: 40px;
+  font-family: "DM Sans", sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+  color: rgb(77, 77, 77);
+  margin-left: 20px;
+  margin-bottom: 40px;
 }
 
 .option-select-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    row-gap: 20px;
-    column-gap: 20px;
-    margin: 0 20px 40px 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  row-gap: 20px;
+  column-gap: 20px;
+  margin: 0 20px 40px 20px;
 }
 
 .option-select-box {
-    height: 150px;
-    border-radius: 18px;
-    text-align: center;
-    line-height: 150px;
-    position: relative;
-    overflow: hidden;
+  height: 150px;
+  border-radius: 18px;
+  text-align: center;
+  line-height: 150px;
+  position: relative;
+  overflow: hidden;
 
-    color: rgb(77, 77, 77);
-    font-family: 'DM Sans', sans-serif;
-    font-weight: bold;
-    font-size: 25px;
-    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
-    transition: all 0.15s;
+  color: rgb(77, 77, 77);
+  font-family: "DM Sans", sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.15s;
 }
 
 .option-select-box:hover {
-    opacity: 0.8;
+  opacity: 0.8;
 }
 
 .furniture-option-image,
@@ -43,26 +43,26 @@
 .rugs-mattresses-option-image,
 .kitchen-option-image,
 .search-by-room-option-image {
-    opacity: 0.5;
-    position: absolute;
-    left: 0;
-    width: 100%;
-    z-index: 0;
+  opacity: 0.5;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  z-index: 0;
 }
 
 .outdoor-option-image,
 .bedding-option-image,
 .kitchen-option-image,
 .rugs-mattresses-option-image {
-    height: 100%;
+  height: 100%;
 }
 
 .search-by-room-option-image {
-    right: 0;
-    bottom: 0;
-    margin: auto;
-    width: 50%;
-    height: 100%;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 50%;
+  height: 100%;
 }
 
 .furniture-option-text,
@@ -72,28 +72,38 @@
 .rugs-mattresses-option-text,
 .kitchen-option-text,
 .search-by-room-option-text {
-    position: relative;
-    z-index: 1;
+  position: relative;
+  z-index: 1;
 }
 
 @media (max-width: 1043px) {
-    .option-select-grid { grid-template-columns: 1fr 1fr 1fr; }
+  .option-select-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 @media (max-width: 774px) {
-    .option-select-grid { grid-template-columns: 1fr 1fr; } 
+  .option-select-grid {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 @media (max-width: 534px) {
-    .option-select-box { font-size: 22px; }
-    .furniture-option-image { height: 100%; }
-    .bath-option-image { height: 100%; }
+  .option-select-box {
+    font-size: 22px;
+  }
+  .furniture-option-image {
+    height: 100%;
+  }
+  .bath-option-image {
+    height: 100%;
+  }
 }
 
 @media (max-width: 430px) {
-    .option-select-box {
-        font-size: 22px;
-        height: 100px;
-        line-height: 100px;
-    }
+  .option-select-box {
+    font-size: 22px;
+    height: 100px;
+    line-height: 100px;
+  }
 }
