@@ -1,5 +1,6 @@
 /* Load the navbar as the window is loaded */
 const navbar = document.getElementById("navbar");
+const header = document.getElementById("header");
 window.addEventListener("DOMContentLoaded", () => {
   navbar.innerHTML = `<header class="navbar-header">
                         <button id="close-navbar-menu" class="js-close-navbar close-navbar-button">
@@ -27,6 +28,33 @@ window.addEventListener("DOMContentLoaded", () => {
                             Sign In
                           </button>
                         </ul>`;
+  header.innerHTML = `<div class="left-section">
+                        <img
+                          id="open-navbar-menu"
+                          class="hamburger-menu-icon"
+                          src="images/header-images/hamburger-menu-icon.png"
+                        />
+                        <img
+                          onclick="window.location.href='index.html'"
+                          class="housekit-logo"
+                          src="images/header-images/housekit-logo.png"
+                        />
+                      </div>
+                      <div class="right-section">
+                        <button class="header-buttons">Furniture</button>
+                        <button class="header-buttons">Outdoor</button>
+                        <button class="header-buttons">Bedding</button>
+                        <button class="header-buttons">Bath</button>
+                        <button class="header-buttons">Rugs & Mattresses</button>
+                        <button class="header-buttons">Kitchen</button>
+                        <button class="header-buttons">Search by Room</button>
+                        <button
+                          onclick="window.location.href='login.html'"
+                          class="sign-in-button"
+                        >
+                          Sign In
+                        </button>
+                      </div>`;
   /* To handle the Main Page Navbar */
   const openNavbar = document.getElementById("open-navbar-menu");
   const closeNavbar = document.getElementById("close-navbar-menu");
