@@ -1,119 +1,119 @@
 .footer {
-	background-color: rgb(10, 10, 178);
-	background-color: rgb(247, 245, 245);
-	display: flex;
-	align-items: center;
-	justify-content: center;
+  background-color: rgb(10, 10, 178);
+  background-color: rgb(247, 245, 245);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-	box-shadow: 0px -2px 2px rgba(0, 0, 0, 0.15);
-	font-family: "DM Sans", sans-serif;
-	color: rgb(100, 100, 100);
+  box-shadow: 0px -2px 2px rgba(0, 0, 0, 0.15);
+  font-family: "DM Sans", sans-serif;
+  color: rgb(100, 100, 100);
 }
 
 .footer-left,
 .footer-middle,
 .footer-right {
-	margin-top: 20px;
-	text-align: center;
-	flex: 1;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+  margin-top: 20px;
+  text-align: center;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .footer-left > .title,
 .footer-middle > .title,
 .footer-right > .title {
-	font-size: 26px;
-	font-weight: bold;
+  font-size: 26px;
+  font-weight: bold;
 }
 
 .footer-left > p,
 .footer-middle > p,
 .footer-right > p {
-	font-size: 18px;
-	margin: 6px 0;
-	cursor: pointer;
-	transition: all 0.15s;
+  font-size: 18px;
+  margin: 6px 0;
+  cursor: pointer;
+  transition: all 0.15s;
 }
 
 .footer-left > p:hover,
 .footer-middle > p:hover,
 .footer-right > p:hover {
-	color: rgb(44, 44, 44);
+  color: rgb(44, 44, 44);
 }
 
 .footer-left > button,
 .footer-middle > button,
 .footer-right > button {
-	margin: 6px 0;
-	width: 120px;
-	padding: 5px 12px;
-	background-color: rgb(10, 10, 178);
-	color: white;
-	font-family: "DM Sans", sans-serif;
-	font-size: 18px;
-	border: none;
-	border-radius: 16px;
-	cursor: pointer;
-	transition: all 0.15s;
+  margin: 6px 0;
+  width: 120px;
+  padding: 5px 12px;
+  background-color: rgb(10, 10, 178);
+  color: white;
+  font-family: "DM Sans", sans-serif;
+  font-size: 18px;
+  border: none;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: all 0.15s;
 }
 
 .footer-left > button:hover,
 .footer-middle > button:hover,
 .footer-right > button:hover {
-	opacity: 0.7;
+  opacity: 0.7;
 }
 
 .contact-us-image-wrapper {
-	margin: 6px 0;
-	display: flex;
-	flex-direction: row;
+  margin: 6px 0;
+  display: flex;
+  flex-direction: row;
 }
 .contact-us-logo-images {
-	margin: 0 5px;
-	width: 25px;
-	height: 25px;
-	cursor: pointer;
-	filter: brightness(0) saturate(100%) invert(54%) sepia(9%) saturate(19%)
-		hue-rotate(346deg) brightness(86%) contrast(91%);
-	transition: all 0.15s;
+  margin: 0 5px;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  filter: brightness(0) saturate(100%) invert(54%) sepia(9%) saturate(19%)
+    hue-rotate(346deg) brightness(86%) contrast(91%);
+  transition: all 0.15s;
 }
 
 .contact-us-logo-images:hover {
-	filter: brightness(0) invert(23%) sepia(98%) saturate(17%) hue-rotate(346deg)
-		brightness(98%) contrast(86%);
+  filter: brightness(0) invert(23%) sepia(98%) saturate(17%) hue-rotate(346deg)
+    brightness(98%) contrast(86%);
 }
 
 .copyright-issue {
-	font-size: 16px;
-	font-family: "DM Sans", sans-serif;
-	color: rgb(77, 77, 77);
-	margin: 20px 0px 10px 10px;
+  font-size: 16px;
+  font-family: "DM Sans", sans-serif;
+  color: rgb(77, 77, 77);
+  margin: 20px 0px 10px 10px;
 }
 
 @media (max-width: 692px) {
-	.footer-left > .title,
-	.footer-middle > .title,
-	.footer-right > .title {
-		font-size: 23px;
-	}
-	.footer-left > p,
-	.footer-middle > p,
-	.footer-right > p {
-		font-size: 15px;
-	}
-	.copyright-issue {
-		font-size: 12px;
-	}
+  .footer-left > .title,
+  .footer-middle > .title,
+  .footer-right > .title {
+    font-size: 23px;
+  }
+  .footer-left > p,
+  .footer-middle > p,
+  .footer-right > p {
+    font-size: 15px;
+  }
+  .copyright-issue {
+    font-size: 12px;
+  }
 }
 
 @media (max-width: 470px) {
-	.footer {
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-	}
-	.footer-right {
-		grid-column: 1 / -1;
-	}
+  .footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .footer-right {
+    grid-column: 1 / -1;
+  }
 }

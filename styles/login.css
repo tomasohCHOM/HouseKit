@@ -1,31 +1,31 @@
 :root {
-	--font: "DM Sans", sans-serif;
-	--color-white: rgb(247, 247, 247);
-	--color-white-opaque: rgba(247, 247, 247, 0.6);
-	--color-black: rgba(77, 77, 77);
-	--color-blue: rgb(10, 10, 178);
+  --font: "DM Sans", sans-serif;
+  --color-white: rgb(247, 247, 247);
+  --color-white-opaque: rgba(247, 247, 247, 0.6);
+  --color-black: rgba(77, 77, 77);
+  --color-blue: rgb(10, 10, 178);
 }
 
 *,
 *::before,
 *::after {
-	font-family: var(--font);
+  font-family: var(--font);
 }
 
 body {
-	margin: 0;
-	padding: 0;
-	background-image: url("../images/login-images/login-background-image.webp");
-	background-repeat: no-repeat;
-	background-size: cover;
+  margin: 0;
+  padding: 0;
+  background-image: url("../images/login-images/login-background-image.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .login-main {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	width: 100%;
-	min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh;
 }
 
 /* Very ugly way of fixing box sizing */
@@ -36,71 +36,71 @@ body {
 .login-wrapper > button,
 .login-wrapper > a,
 .error-message {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .login-wrapper {
-	width: 400px;
-	height: 450px;
-	padding: 1.25rem;
-	border-radius: 1.25rem;
-	background: var(--color-white-opaque);
-	border: 2px solid rgba(255, 255, 255, 0.5);
-	box-shadow: 2px 2px 5px rgba(10, 15, 27, 0.15);
-	backdrop-filter: blur(3px);
-	-webkit-backdrop-filter: blur(3px);
+  width: 400px;
+  height: 450px;
+  padding: 1.25rem;
+  border-radius: 1.25rem;
+  background: var(--color-white-opaque);
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 2px 2px 5px rgba(10, 15, 27, 0.15);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
 
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-	row-gap: 10px;
-	color: var(--color-black);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 10px;
+  color: var(--color-black);
 }
 
 .login-wrapper > h2 {
-	font-size: 2rem;
-	text-align: center;
+  font-size: 2rem;
+  text-align: center;
 }
 
 .login-wrapper > div {
-	margin: 5px 0;
+  margin: 5px 0;
 }
 
 .login-form > input {
-	width: 300px;
-	height: 30px;
-	font-size: 1rem;
-	padding: 0 1rem;
-	border: none;
-	outline: none;
-	border-radius: 1.25rem;
-	transition: all 0.25s;
+  width: 300px;
+  height: 30px;
+  font-size: 1rem;
+  padding: 0 1rem;
+  border: none;
+  outline: none;
+  border-radius: 1.25rem;
+  transition: all 0.25s;
 }
 
 .login-wrapper > button {
-	width: 320px;
-	height: 40px;
-	border-radius: 40px;
-	font-size: 1rem;
-	background-color: var(--color-white);
-	color: var(--color-black);
-	border: none;
-	cursor: pointer;
-	transition: all 0.15s;
-	font-weight: 600;
+  width: 320px;
+  height: 40px;
+  border-radius: 40px;
+  font-size: 1rem;
+  background-color: var(--color-white);
+  color: var(--color-black);
+  border: none;
+  cursor: pointer;
+  transition: all 0.15s;
+  font-weight: 600;
 }
 
 .login-wrapper > button:hover {
-	background-color: var(--color-blue);
-	color: var(--color-white);
+  background-color: var(--color-blue);
+  color: var(--color-white);
 }
 
 .login-wrapper > a {
-	color: var(--color-black);
+  color: var(--color-black);
 }
 
 .error-message {
-	color: rgb(192, 0, 0);
-	text-align: center;
+  color: rgb(192, 0, 0);
+  text-align: center;
 }

@@ -1,7 +1,7 @@
 /* Load the navbar as the window is loaded */
 const navbar = document.getElementById("navbar");
 window.addEventListener("DOMContentLoaded", () => {
-	navbar.innerHTML = `<header class="navbar-header">
+  navbar.innerHTML = `<header class="navbar-header">
                         <button id="close-navbar-menu" class="js-close-navbar close-navbar-button">
                           <ion-icon name="close-outline"></ion-icon>
                         </button>
@@ -27,21 +27,21 @@ window.addEventListener("DOMContentLoaded", () => {
                             Sign In
                           </button>
                         </ul>`;
-	/* To handle the Main Page Navbar */
-	const openNavbar = document.getElementById("open-navbar-menu");
-	const closeNavbar = document.getElementById("close-navbar-menu");
+  /* To handle the Main Page Navbar */
+  const openNavbar = document.getElementById("open-navbar-menu");
+  const closeNavbar = document.getElementById("close-navbar-menu");
 
-	openNavbar.addEventListener("click", () => {
-		handleNavbarMenu();
-	});
+  openNavbar.addEventListener("click", () => {
+    handleNavbarMenu();
+  });
 
-	closeNavbar.addEventListener("click", () => {
-		handleNavbarMenu();
-	});
+  closeNavbar.addEventListener("click", () => {
+    handleNavbarMenu();
+  });
 
-	function handleNavbarMenu() {
-		navbar.classList.toggle("open-navbar");
-	}
+  function handleNavbarMenu() {
+    navbar.classList.toggle("open-navbar");
+  }
 });
 
 /* To handle User Login when they do not input a Username or Password */
@@ -53,18 +53,18 @@ const loginErrorMessage = document.getElementById("login-error-message");
 
 /* ONLY do this action if we are in the login page */
 if (loginSubmit) {
-	loginSubmit.addEventListener("click", (e) => {
-		e.preventDefault();
-		let errorMessage = "";
-		if (usernameInput.value == "" || usernameInput.value == null) {
-			errorMessage = "Please input a correct username.";
-		} else if (passwordInput.value == "" || passwordInput.value == null) {
-			errorMessage = "Please input a correct password.";
-		} else {
-			if (passwordInput.value.length < 6 || passwordInput.value.length > 20) {
-				errorMessage = "Password must be between 6 and 20 characters.";
-			}
-		}
-		loginErrorMessage.textContent = errorMessage;
-	});
+  loginSubmit.addEventListener("click", (e) => {
+    e.preventDefault();
+    let errorMessage = "";
+    if (usernameInput.value == "" || usernameInput.value == null) {
+      errorMessage = "Please input a correct username.";
+    } else if (passwordInput.value == "" || passwordInput.value == null) {
+      errorMessage = "Please input a correct password.";
+    } else {
+      if (passwordInput.value.length < 6 || passwordInput.value.length > 20) {
+        errorMessage = "Password must be between 6 and 20 characters.";
+      }
+    }
+    loginErrorMessage.textContent = errorMessage;
+  });
 }
