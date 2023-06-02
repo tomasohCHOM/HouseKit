@@ -3,31 +3,74 @@ const navbar = document.getElementById("navbar");
 const header = document.getElementById("header");
 window.addEventListener("DOMContentLoaded", () => {
   navbar.innerHTML = `<header class="navbar-header">
-                        <button id="close-navbar-menu" class="js-close-navbar close-navbar-button">
+                        <button
+                          id="close-navbar-menu"
+                          class="js-close-navbar close-navbar-button"
+                        >
                           <ion-icon name="close-outline"></ion-icon>
                         </button>
-                        <img onclick="window.location.href='index.html'" class="housekit-logo-navbar" src="images/header-images/housekit-logo.png">
+                        <img
+                          onclick="window.location.href='index.html'"
+                          class="housekit-logo-navbar"
+                          src="images/header-images/housekit-logo.png"
+                        />
                       </header>
-                        <ul>
-                          <li>
-                            <a href=#><ion-icon class="navbar-icons" name="person-circle-outline"></ion-icon>My Account</a>
-                          </li>
-                          <li>
-                            <a href=#><ion-icon class="navbar-icons" name="cart-outline"></ion-icon>My Cart</a></li>
-                          <li>
-                            <a href=#><ion-icon class="navbar-icons" name="home-outline"></ion-icon>Furnitures</a></li>
-                          <li>
-                            <a href=#><ion-icon class="navbar-icons" name="pricetags-outline"></ion-icon>Latest Offers</a></li>
-                          <li>
-                            <a href=#><ion-icon class="navbar-icons" name="information-circle-outline"></ion-icon>About Us</a></li>
-                          <li>
-                            <a href=#><ion-icon class="navbar-icons" name="people-outline"></ion-icon>Customer Service</a></li>
-                          <li>
-                            <a href=#><ion-icon class="navbar-icons" name="call-outline"></ion-icon>Contact Us</a></li>
-                          <button onclick="window.location.href='login.html'" class="sign-in-button navbar-sign-in">
-                            Sign In
-                          </button>
-                        </ul>`;
+                      <ul>
+                        <li>
+                          <a href="#"
+                            ><ion-icon
+                              class="navbar-icons"
+                              name="person-circle-outline"
+                            ></ion-icon
+                            >My Account</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#"
+                            ><ion-icon class="navbar-icons" name="cart-outline"></ion-icon>My
+                            Cart</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#"
+                            ><ion-icon class="navbar-icons" name="home-outline"></ion-icon
+                            >Furnitures</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#"
+                            ><ion-icon class="navbar-icons" name="pricetags-outline"></ion-icon
+                            >Latest Offers</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#"
+                            ><ion-icon
+                              class="navbar-icons"
+                              name="information-circle-outline"
+                            ></ion-icon
+                            >About Us</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#"
+                            ><ion-icon class="navbar-icons" name="people-outline"></ion-icon
+                            >Customer Service</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#"
+                            ><ion-icon class="navbar-icons" name="call-outline"></ion-icon>Contact
+                            Us</a
+                          >
+                        </li>
+                        <button
+                          onclick="window.location.href='login.html'"
+                          class="sign-in-button navbar-sign-in"
+                        >
+                          Sign In
+                        </button>
+                      </ul>`;
   header.innerHTML = `<div class="left-section">
                         <img
                           id="open-navbar-menu"
